@@ -75,11 +75,106 @@
 // console.log(value);
 // console.log(value2);
 
-let sum = 0;
+// let sum = 0;
 
-for (let i = 0; i < 1000000000000; i++) {
-    sum = sum + i;
+// for (let i = 0; i < 10000000000000; i++) {
+//     sum = sum + i;
+// }
+
+// console.log(sum);
+
+// function sum(num1, num2, fnToCall) {
+//     let result = num1 + num2;
+//     //return result;
+//     fnToCall(result);
+// }
+// function displayResult(data) {
+//     console.log("Result of the sum is:" +data); 
+// }
+// function displayResultPassive(data) {
+//     console.log("Sum's result is:" +data); 
+// }
+// const ans = sum(1,2, displayResultPassive);
+
+// const user = {
+//     name : "Sumantra",
+//     age : 23,
+//     address: {
+//         houseNumber: "11A",
+//         streat: 1
+
+//     }
+// }
+
+// console.log(user["address"]["houseNumber"])
+// ///////
+
+// slice
+// function getSlice(str, start, end) {
+//   console.log("Original String:", str);
+//   console.log("After slice:", str.slice(start, end));
+// }
+// getSlice("Hello World", 0, 5);
+
+// const initialArray = [1, 2, 3];
+// const secondArray = [4, 5, 6];
+// const finalArray = initialArray.concat(secondArray);
+
+// console.log(finalArray)
+
+// function dateMethods() {
+//   const currentDate = new Date();
+//   console.log("Current Date:", currentDate);
+
+//   // Getting various components of the date
+//   console.log("Date:", currentDate.getDate());
+//   console.log("Month:", currentDate.getMonth() + 1); // Months are zero-indexed, so adding 1
+//   console.log("Year:", currentDate.getFullYear());
+//   console.log("Hours:", currentDate.getHours());
+//   console.log("Minutes:", currentDate.getMinutes());
+//   console.log("Seconds:", currentDate.getSeconds());
+
+//   // Setting components of the date
+//   currentDate.setFullYear(2022);
+//   console.log("After setFullYear:", currentDate);
+
+//   currentDate.setMonth(5); // Setting month to June (zero-indexed)
+//   console.log("After setMonth:", currentDate);
+
+//   // Getting and setting time in milliseconds since 1970
+//   console.log("Time in milliseconds since 1970:", currentDate.getTime());
+
+//   const newDate = new Date(2023, 8, 15); // Creating a new date
+//   console.log("New Date:", newDate);
+// }
+
+// // Example Usage for Date Methods
+// dateMethods();
+
+// Object Methods Explanation
+function objectMethods(obj) {
+  console.log("Original Object:", obj);
+
+  let keys = Object.keys(obj);
+  console.log("After Object.keys():", keys);
+
+  let values = Object.values(obj);
+  console.log("After Object.values():", values);
+
+  let entries = Object.entries(obj);
+  console.log("After Object.entries():", entries);
+
+  let hasProp = obj.hasOwnProperty("property");
+  console.log("After hasOwnProperty():", hasProp);
+
+  let newObj = Object.assign({}, obj, { newProperty: "newValue" });
+  console.log("After Object.assign():", newObj);
 }
+// Example Usage for Object Methods
+const sampleObject = {
+  key1: "value1",
+  key2: "value2",
+  key3: "value3",
+};
 
-console.log(sum);
-
+objectMethods(sampleObject);
