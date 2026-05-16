@@ -42,28 +42,44 @@
 
 //print name if male, better was => as object.
 
-const allUsers = [{
-    firstName : "Sumantra",
-    gender : "male"
-},
-{
-    firstName : "Kumar",
-    gender : "male"
-},
-{
-    firstName : "priya",
-    gender : "female",
-    // example --> metadata : {
-    //     age : 23,
-    //     address : "XYZ Road 01"
-    // }
-}]
+// const allUsers = [{
+//     firstName : "Sumantra",
+//     gender : "male"
+// },
+// {
+//     firstName : "Kumar",
+//     gender : "male"
+// },
+// {
+//     firstName : "priya",
+//     gender : "female",
+//     // example --> metadata : {
+//     //     age : 23,
+//     //     address : "XYZ Road 01"
+//     // }
+// }]
 
-for  (let i = 0; i <allUsers.length; i++) {
-    if (allUsers[i]["gender"] == "male") {
-        console.log(allUsers[i]["firstName"])  // the more nested it is the more complex it gets 
-    }                                          // example --> console.log(allUsers[i]["metadata"]["age"] == something)
+// for  (let i = 0; i <allUsers.length; i++) {
+//     if (allUsers[i]["gender"] == "male") {
+//         console.log(allUsers[i]["firstName"])  // the more nested it is the more complex it gets 
+//     }                                          // example --> console.log(allUsers[i]["metadata"]["age"] == something)
+// }
+
+// function sum(a, b){
+//     const sumValue = a + b;
+//     return sumValue;
+// }
+
+// const value = sum(1, 2)
+// const value2 = sum(10, 2)
+// console.log(value);
+// console.log(value2);
+
+let sum = 0;
+
+for (let i = 0; i < 1000000000000; i++) {
+    sum = sum + i;
 }
 
-
+console.log(sum);
 
