@@ -152,29 +152,65 @@
 // dateMethods();
 
 // Object Methods Explanation
-function objectMethods(obj) {
-  console.log("Original Object:", obj);
 
-  let keys = Object.keys(obj);
-  console.log("After Object.keys():", keys);
 
-  let values = Object.values(obj);
-  console.log("After Object.values():", values);
+// function objectMethods(obj) {
+//   console.log("Original Object:", obj);
 
-  let entries = Object.entries(obj);
-  console.log("After Object.entries():", entries);
+//   let keys = Object.keys(obj);
+//   console.log("After Object.keys():", keys);
 
-  let hasProp = obj.hasOwnProperty("property");
-  console.log("After hasOwnProperty():", hasProp);
+//   let values = Object.values(obj);
+//   console.log("After Object.values():", values);
 
-  let newObj = Object.assign({}, obj, { newProperty: "newValue" });
-  console.log("After Object.assign():", newObj);
+//   let entries = Object.entries(obj);
+//   console.log("After Object.entries():", entries);
+
+//   let hasProp = obj.hasOwnProperty("property");
+//   console.log("After hasOwnProperty():", hasProp);
+
+//   let newObj = Object.assign({}, obj, { newProperty: "newValue" });
+//   console.log("After Object.assign():", newObj);
+// }
+// // Example Usage for Object Methods
+// const sampleObject = {
+//   key1: "value1",
+//   key2: "value2",
+//   key3: "value3",
+// };
+
+// objectMethods(sampleObject);
+
+
+function square(n) {
+  return n * n ;
 }
-// Example Usage for Object Methods
-const sampleObject = {
-  key1: "value1",
-  key2: "value2",
-  key3: "value3",
-};
 
-objectMethods(sampleObject);
+function cube(n) {
+  return n * n * n ;
+}
+
+function squareOfSum(a,b) {
+  const num1 = square(a)
+  const num2 = square(b)
+  return num1 + num2 ;
+}
+
+function cubeOfSum(a,b) {
+  const num1 = cube(a)
+  const num2 = cube(b)
+  return num1 + num2 ;
+}
+
+function sumOfSomething(a ,b , fn) {
+  const num1 = fn(a)
+  const num2 = fn(b)
+  return num1 + num2 ;
+}
+
+//const ans1 = squareOfSum(8,6);
+console.log(sumOfSomething(6, 8, square));
+
+//const ans2 = cubeOfSum(8,6);
+console.log(sumOfSomething( 6, 8, cube));
+
