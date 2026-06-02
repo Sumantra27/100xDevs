@@ -181,36 +181,125 @@
 
 // objectMethods(sampleObject);
 
+//////////
 
-function square(n) {
-  return n * n ;
-}
+// function square(n) {
+//   return n * n ;
+// }
 
-function cube(n) {
-  return n * n * n ;
-}
+// function cube(n) {
+//   return n * n * n ;
+// }
 
-function squareOfSum(a,b) {
-  const num1 = square(a)
-  const num2 = square(b)
-  return num1 + num2 ;
-}
+// function squareOfSum(a,b) {
+//   const num1 = square(a)
+//   const num2 = square(b)
+//   return num1 + num2 ;
+// }
 
-function cubeOfSum(a,b) {
-  const num1 = cube(a)
-  const num2 = cube(b)
-  return num1 + num2 ;
-}
+// function cubeOfSum(a,b) {
+//   const num1 = cube(a)
+//   const num2 = cube(b)
+//   return num1 + num2 ;
+// }
 
-function sumOfSomething(a ,b , fn) {
-  const num1 = fn(a)
-  const num2 = fn(b)
-  return num1 + num2 ;
-}
+// function sumOfSomething(a ,b , fn) {
+//   const num1 = fn(a)
+//   const num2 = fn(b)
+//   return num1 + num2 ;
+// }
 
-//const ans1 = squareOfSum(8,6);
-console.log(sumOfSomething(6, 8, square));
+// //const ans1 = squareOfSum(8,6);
+// console.log(sumOfSomething(6, 8, square));
 
-//const ans2 = cubeOfSum(8,6);
-console.log(sumOfSomething( 6, 8, cube));
+// //const ans2 = cubeOfSum(8,6);
+// console.log(sumOfSomething( 6, 8, cube));
 
+//********/
+
+// const fs = require("fs"); //fs  - filesystem module
+
+// fs.readFile("a.txt", "utf-8", function(err, data) {
+//   console.log(data);
+// } )
+
+// console.log("Hi there.");
+
+// let a = 0;
+// for(let i = 0; i < 1000000000; i++){
+//   a++;
+// }
+
+// console.log("Hi there.!!");
+
+// //////////////// promise
+
+// const fs = require('fs');
+
+// // my own asynchronous, funct ton
+// function kiratsReadFile(){
+//   return new Promise(function(resolve) {
+//     fs.readFile("a.txt", "utf-8", function(err, data) {
+//       resolve(data);
+//     });
+//   })
+// }
+// // callback function to call
+// function onDone(data) {
+//   console.log(data)
+// }
+//  kiratsReadFile().then(onDone);
+
+
+//////////
+
+// const fs = require("fs");
+
+// function putCopyrightToFile(cb) {
+//   fs.readFile("a.txt", "utf-8", function(err, data) {
+//   data = data + "\ncopyright 2026 SUMANTRA";
+//   fs.writeFile("a.txt",data, function () {
+//     cb();
+//   })
+// });
+// }
+
+// putCopyrightToFile( function() {
+//   console.log("Copyright has been put.")
+// })
+
+/////
+
+// const fs = require("fs");
+
+// function putCopyrightToFile(cb) {
+//   fs.readFile("a.txt", "utf-8", function(err, data) {
+
+//     data = data + "\nCopyright 2026 SUMANTRA";
+
+//     fs.writeFile("a.txt", data, function(err) {
+//       if (err) {
+//         console.log(err);
+//         return;
+//       }
+
+//       cb();
+//     });
+
+//   });
+// }
+
+// putCopyrightToFile(function() {
+//   console.log("Copyright has been put.");
+// });
+
+//
+console.log("one");
+console.log("two");
+
+ setTimeout( () => {
+  console.log("hello")
+ }, 2000);
+
+console.log("three");
+console.log("four");
