@@ -294,12 +294,39 @@
 // });
 
 //
-console.log("one");
-console.log("two");
+// console.log("one");
+// console.log("two");
 
- setTimeout( () => {
-  console.log("hello")
- }, 2000);
+//  setTimeout( () => {
+//   console.log("hello")
+//  }, 2000);
 
-console.log("three");
-console.log("four");
+// console.log("three");
+// console.log("four");
+
+/////////
+
+const datas = [
+  {name: "Ajay", dept: "CSE"},
+  {name: "Anuj", dept: "CSE"}
+];
+
+function getDatas(){
+  setTimeout(() => {
+    let output = "";
+    datas.forEach((data,index)=>{
+      output+= <li>${data.name}</li>;
+    })
+    document.body.innerHTML=output
+  }, 1000);
+}
+
+function createdata(newdata,callback){
+  setTimeout(() => {
+    datas.push(newdata);
+    callback();
+  }, 2000);
+}
+
+createdata({name: "Ankur", dept: "CSE"},getDatas)
+
