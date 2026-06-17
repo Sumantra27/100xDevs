@@ -1,8 +1,9 @@
+/*
 #include <iostream>
 using namespace std;
 
  int main(){
- /*int a;
+ int a;
      cout << "Enter value a: ";
     cin >> a;
 
@@ -45,12 +46,307 @@ using namespace std;
     }
     else{
         cout <<"two"<< a+1;
-    }    */
+    }    
+
+    int n;
+
+    cout << "Enter value n: ";
+    cin>>n;
+    int i = 1;
+
+    int sum = 0;
+
+    while (i <= n)
+    {
+       // cout << i << " ";
+       sum = sum + i; 
+        i = i + 1; 
+    }
+    cout << "Value of sum is:" << sum << endl;
+
+    
 
     return 0;
  }   
-   
+    */
+
+    /*
+PRIME not PRIME
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cin >> n;
+    int i = 2;
+
+    while(i<n){
+        if (n%i==0) {
+            cout << "Not prime for " << i << endl;
+        }
+        else{
+            cout << "Prime for " << i << endl;
+        }
+        i = i + 1;
+    }
+}
+   */
+  /*  Star patern
+
+ #include <iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    cin >> n;
+    int i = 1;
+
+    while(i<=n){
+
+        int j = 1;
+        while (j<=n)
+        {
+            cout << "* ";
+            j = j + 1;
+        }
+        cout << endl;
+         i = i + 1;
+
+    }
+
+}   
+    */ 
+
+    /*
+#include<iostream>
+using namespace std;
+int main() {
     
+    pattern 1111
+              2222
+              3333
+              4444          
+   
+    int n;
+    cin >> n;
+    int i = 1;
+
+    while(i<=n){
+        int j = 1;
+        while(j<=n){
+            cout << i << " ";
+            j = j + 1;
+        }
+        cout << endl;
+        i = i + 1;
+    }
+         */
+
+        /*  pattern
+            1 2 3 4 
+            1 2 3 4 
+            1 2 3 4 
+            1 2 3 4        
+
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int i = 1;
+
+    while(i<=n){
+        int j = 1;
+
+        while(j<=n) {
+            cout << j << " ";
+            j = j + 1;
+        }
+
+        cout << endl;
+        i = i + 1;
+    }
+        */
+
+        /*  pattern -  3 2 1 
+                       3 2 1 
+                       3 2 1
+
+
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int i = 1;
+
+    while(i<=n){
+        int j = 1;
+
+        while(j<=n) {
+            cout << n - j + 1 << " ";
+            j = j + 1;
+        }
+
+        cout << endl;
+        i = i + 1;
+    }   
+       
+    ///////
+1 2 3 
+4 5 6 
+7 8 9 
+
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int i = 1;
+    int count = 1;
+
+    while(i<=n){
+        int j = 1;
+
+        while(j<=n) {
+            cout << count << " ";
+            count = count + 1;
+            j = j + 1;
+        }
+
+        cout << endl;
+        i = i + 1;
+    } 
+
+     */
+
+     /////
+    /* pattern - triangle star
+    
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+
+    while(row<=n){
+        int col = 1;
+
+        while(col<=row) {
+            cout << "*" << " ";
+            col = col + 1;
+        }
+
+        cout << endl;
+        row = row + 1;
+    }
+        
+             ///////
+            number pyramid
+
+#include<iostream>
+using namespace std;
+int main() {
+
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+
+    while(row<=n){
+        int col = 1;
+
+        while(col<=row) {
+            cout << row << " ";
+            col = col + 1;
+        }
+
+        cout << endl;
+        row = row + 1;
+    }    
+
+}
+   
+
+    /////// 
+       //progressive number pyramid
+
+
+#include<iostream>
+using namespace std;
+int main() {
+
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    int count = 1;
+  
+
+    while(row<=n){
+        int col = 1;
+
+        while(col<=row) {
+            cout << count << " ";
+            count = count + 1;
+            col = col + 1;
+        }
+
+        cout << endl;
+        row = row + 1;
+    }    
+
+}
+    //////
+    pattern - 1
+              2 3
+              3 4 5
+              4 5 6 7 
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row<=n){
+        int col = 1; int value = row;   //solve without value.
+        while(col<=row) {
+            cout << value << " ";
+            value = value + 1;
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+
+///////
+pattern -   1
+            2 1
+            3 2 1
+            4 3 2 1
+
+*/ 
+       
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row<=n){
+        int col = 1; int value = row;   //solve without value.
+        while(col<=row) {
+            cout << value << " ";
+            value =  value + 1;
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+
+
     
   
 
