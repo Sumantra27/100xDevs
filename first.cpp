@@ -324,7 +324,7 @@ pattern -   1
             3 2 1
             4 3 2 1
 
-*/ 
+ 
        
 
 #include<iostream>
@@ -346,7 +346,108 @@ int main() {
 }
 
 
+/////
+pattern -
+    A A A
+    B B B
+    C C C
+
     
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row <= n) { 
+        int col = 1;   
+        while(col <= n) {
+            char ch = 'A' + row - 1;
+            cout << ch << " ";
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+
+
+////////
+pattern -
+    A B C
+    A B C
+    A B C
+
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row <= n) { 
+        int col = 1;   
+        while(col <= n) {
+            char ch = 'A' + col - 1;
+            cout << ch << " ";
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+
+/////
+pattern
+A B C
+D E F
+G H I
+
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;        //??? galat aya hai
+    while(row <= n) { 
+        int col = 1;   
+        while(col <= n) {
+            char value = 'A';
+            cout << value << " ";
+            value = value + 1;
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+
+ 
+*/
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row <= n) { 
+        int col = 1;   
+        while(col <= n) {
+            char ch = 'A' + col - 1;
+            cout << ch << " ";
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+ 
   
 
 
