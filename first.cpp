@@ -514,8 +514,106 @@ int main() {
 
 /////////
 pattern- 
+Enter value n: 4
+D 
+C D 
+B C D 
+A B C D 
 
 
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row <= n) { 
+        int col = 1; 
+        char ch = 'A' + n - row;   
+        while(col <= row) {
+            cout << ch << " ";
+            ch = ch + 1;
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+
+/////////
+pattern- 
+Enter value n: 4
+   *
+  **
+ ***
+****
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row <= n) { 
+        int space = n - row;
+        while(space) {
+            cout << " ";
+            space = space - 1;
+        }
+        int col = 1;    
+        while(col <= row) {
+            cout << "*";
+            col = col + 1;
+        }
+        cout << endl;
+        row = row + 1;
+    }    
+}
+  
+
+/////////
+pattern-
+Enter value n: 4
+   1
+  121
+ 12321
+1234321
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter value n: ";
+    cin >> n;
+    int row = 1;
+    while(row <= n) { 
+        
+        //print 1st triangle (space)
+        int space = n - row;
+        while(space) {
+            cout << " ";
+            space = space - 1;
+        } 
+
+        //print 2nd triangle (number)
+        int col = 1;    
+        while(col <= row) {
+            cout << col;
+            col = col + 1;
+        }
+        //print 3rd triangle (number)
+        int start = row - 1;
+        while(start) {
+            cout << start;
+            start = start - 1;
+        }        
+        cout << endl;
+        row = row + 1;
+    }    
+}
+   
 */
 
 #include<iostream>
@@ -526,12 +624,26 @@ int main() {
     cin >> n;
     int row = 1;
     while(row <= n) { 
+        
+        //print 1st triangle (space)
+        int space = n - row;
+        while(space) {
+            cout << " ";
+            space = space - 1;
+        } 
+
+        //print 2nd triangle (number)
         int col = 1;    
         while(col <= row) {
-            char ch = 'A' + row + col - 2;
-            cout << ch << " ";
+            cout << col;
             col = col + 1;
         }
+        //print 3rd triangle (number)
+        int start = row - 1;
+        while(start) {
+            cout << start;
+            start = start - 1;
+        }        
         cout << endl;
         row = row + 1;
     }    
