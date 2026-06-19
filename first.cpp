@@ -665,14 +665,8 @@ int main() {
 #include<iostream>
 using namespace std;
 int main() {
-
-    int a = 1; 
-    int b = a++; 
-    int c = ++a;
-
-    cout << b << endl;
-    cout << c << endl;
-
+    for(int i = 3, j = 4, k = 5; i<=5 && j<=6 && k<=7; i++, j++, k++)
+    cout<< i << " " << j << " " << k << endl; 
 }
 
 
