@@ -613,39 +613,67 @@ int main() {
         row = row + 1;
     }    
 }
+
+/////////////////
+Enter value a: 4
+Enter value b: 6
+ a&b: 4
+ a|b: 6
+ ~a: -5
+ ~b: -5
+ a^b: 2
+
+ 17>>1 8
+ 17>>2 4
+ 19<<1 38
+ 21<<2 84
+
+#include<iostream>
+using namespace std;
+int main() {
+    int a;
+    cout << "Enter value a: ";
+    cin >> a;
+    int b;
+    cout << "Enter value b: ";
+    cin >> b;
+
+
+    cout << " a&b: " << (a&b) << endl;
+    cout << " a|b: " << (a|b) << endl;
+    cout << " ~a: " << (~a) << endl;
+    cout << " ~b: " << (~a) << endl;
+    cout << " a^b: " << (a^b) << endl;
+
+     cout << " 17>>1 " << (17>>1) << endl;
+     cout << " 17>>2 " << (17>>2) << endl;
+     cout << " 19<<1 " << (19<<1) << endl;
+     cout << " 21<<2 " << (21<<2) << endl;
+
+    int i;
+    cout << "Enter value i: ";
+    cin >> i;
+
+     cout << (++i) << endl;
+     cout << (i++) << endl;
+     cout << (i--) << endl;
+     cout << (--i) << endl;          
+}
    
 */
 
 #include<iostream>
 using namespace std;
 int main() {
-    int n;
-    cout << "Enter value n: ";
-    cin >> n;
-    int row = 1;
-    while(row <= n) { 
-        
-        //print 1st triangle (space)
-        int space = n - row;
-        while(space) {
-            cout << " ";
-            space = space - 1;
-        } 
 
-        //print 2nd triangle (number)
-        int col = 1;    
-        while(col <= row) {
-            cout << col;
-            col = col + 1;
-        }
-        //print 3rd triangle (number)
-        int start = row - 1;
-        while(start) {
-            cout << start;
-            start = start - 1;
-        }        
-        cout << endl;
-        row = row + 1;
-    }    
+    int a = 1; 
+    int b = a++; 
+    int c = ++a;
+
+    cout << b << endl;
+    cout << c << endl;
+
 }
-  
+
+
+
