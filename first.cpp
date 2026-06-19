@@ -665,8 +665,23 @@ int main() {
 #include<iostream>
 using namespace std;
 int main() {
-    for(int i = 3, j = 4, k = 5; i<=5 && j<=6 && k<=7; i++, j++, k++)
-    cout<< i << " " << j << " " << k << endl; 
+    // for(int i = 3, j = 4, k = 5; i<=5 && j<=6 && k<=7; i++, j++, k++)
+    // cout<< i << " " << j << " " << k << endl; 
+    int n;
+    cout << "enter n: ";
+    cin>>n;
+    int a = 0;
+    int b = 1;
+
+    cout << a << " " << b << " " ;
+    for (int i; i<=n; i++) {
+        int nextNumber = a+b;
+        cout << nextNumber << " ";
+
+        a = b;
+        b = nextNumber;
+    }
+
 }
 
 
